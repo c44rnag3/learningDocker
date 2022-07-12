@@ -44,3 +44,19 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 sudo apt update
 sudo apt-get install ./docker-desktop-<version>-<arch>.deb
 ~~~
+
+#### :open_file_folder: Recursos Importantes :open_file_folder:
+
+:small_orange_diamond: [¿Qué es Docker?](https://www.javiergarzas.com/2015/07/que-es-docker-sencillo.html)
+
+:small_orange_diamond: [Docker Desktop (DD) Oficial](https://docs.docker.com/desktop/linux/install/)
+
+:small_orange_diamond: [DD Instalación rápida Parrot](https://gist.github.com/nuga99/dd5ac250b4c98154b5065d8affec7b49)
+
+:small_orange_diamond: [Instalación respaldo en Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es)
+
+:small_orange_diamond: [Error - Command not Found on Debian](https://itsfoss.com/add-apt-repository-command-not-found/)
+
+:small_orange_diamond: [Error - After apt update -> 404 not found IP...](https://es.stackoverflow.com/questions/516243/err11-https-download-docker-com-linux-debian-una-release-404-not-found-ip-5)
+
+
