@@ -7,6 +7,8 @@ Para la instalación de Docker, mi propósito es instalar la aplicación ***Dock
 
 Visitaré la página web oficial, que contiene los pasos para instalar docker en mi distribución: 
 
+*Mi distribución* :cd: **Parrot 5.0.1 Electro Ara (Home Edition)**
+
 [Docker Desktop](https://docs.docker.com/desktop/linux/install/debian/)
 
 ### :pencil: Pasos
@@ -22,27 +24,28 @@ sudo apt purge docker-desktop
 ~~~
 
 ~~~
+sudo rm -r ~/.config/systemd/user/docker-desktop.service
+sudo rm -r ~/.local/share/systemd/user/docker-desktop.service
+~~~
+
+~~~
 sudo apt install gnome-terminal
 ~~~
 
 ~~~
-sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg lsb-release
+sudo apt update
+sudo apt install -y curl apt-transport-https ca-certificates gnupg lsb-release software-properties-common
 ~~~
 
 ~~~
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-~~~
-
-~~~
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable" | sudo tee /etc/apt/sources.list.d/docker-engine.list
 ~~~
 
 ~~~
 // Descargo el PAQUETE DEB más reciente de Docker Desktop
 sudo apt update
-sudo apt-get install ./docker-desktop-<version>-<arch>.deb
+sudo apt install ./docker-desktop-<version>-<arch>.deb
 ~~~
 
 #### :open_file_folder: Recursos Importantes :open_file_folder:
@@ -59,4 +62,6 @@ sudo apt-get install ./docker-desktop-<version>-<arch>.deb
 
 :small_orange_diamond: [Error - After apt update -> 404 not found IP...](https://es.stackoverflow.com/questions/516243/err11-https-download-docker-com-linux-debian-una-release-404-not-found-ip-5)
 
+:small_orange_diamond: [apt-key is deprecated (1)](https://stackoverflow.com/questions/68992799/warning-apt-key-is-deprecated-manage-keyring-files-in-trusted-gpg-d-instead)
 
+:small_orange_diamond: [apt-key is deprecated (2)](https://techviewleo.com/apt-key-is-deprecated-manage-keyring-files-in-trusted-gpg-dot-d/)
