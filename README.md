@@ -11,7 +11,7 @@ Visitaré la página web oficial, que contiene los pasos para instalar docker en
 
 [Docker Desktop](https://docs.docker.com/desktop/linux/install/debian/)
 
-### :pencil: Pasos
+#### :pencil: Pasos
 
 ~~~
 sudo apt remove docker-desktop
