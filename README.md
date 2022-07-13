@@ -48,6 +48,43 @@ sudo apt update
 sudo apt install ./docker-desktop-<version>-<arch>.deb
 ~~~
 
+Me aseguro de que la instalación se ha llevado a cabo correctamente:
+
+~~~
+docker compose version
+// salida -> Docker compose version vX.X.X...
+~~~
+~~~
+docker --version
+// salida ->  Docker version XX.XX.XX, build...
+~~~
+~~~
+docker version
+// salida -> Client: XX... / Cloud Integration...
+~~~
+
+### :rocket: Puesta en marcha y Funcionamiento
+*Iniciar Docker Desktop*
+~~~
+systemctl --user start docker-desktop
+~~~
+
+*Habilitar que se inicie Docker Desktop al iniciar sesión*
+~~~
+systemctl --user enable docker-desktop
+~~~
+
+*Detener Docker Desktop*
+~~~
+systemctl --user stop docker-desktop
+~~~
+
+*Comprobar estado (Funcionamiento) Docker Desktop*
+~~~
+systemctl --user status docker-desktop
+~~~
+
+
 #### :open_file_folder: Recursos Importantes :open_file_folder:
 
 :small_orange_diamond: [¿Qué es Docker?](https://www.javiergarzas.com/2015/07/que-es-docker-sencillo.html)
