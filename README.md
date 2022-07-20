@@ -119,6 +119,11 @@ systemctl --user stop docker-desktop
 systemctl --user status docker-desktop
 ~~~
 
+***
+### :whale2: Usando Docker Desktop
+
+
+***
 
 #### :open_file_folder: Recursos Importantes :open_file_folder:
 
