@@ -7,7 +7,9 @@ Para la instalación de Docker, mi propósito es disponer de la aplicación ***D
 
 Visitaré la página web oficial, que contiene los pasos para instalar docker en mi distribución: 
 
-*Mi distribución* :cd: **Parrot 5.0.1 Electro Ara (Home Edition)**
+*Mi distribución* :cd: **Parrot 5.0.1 Electro Ara (Home Edition)** - :x: *Antigua*
+
+*Mi distribución* :cd: **Ubuntu Desktop 20.04.4 LTS** - :heavy_check_mark: *Actual*
 
 [Docker Desktop](https://docs.docker.com/desktop/linux/install/debian/)
 
