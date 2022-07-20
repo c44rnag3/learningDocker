@@ -13,7 +13,7 @@ Visitaré la página web oficial, que contiene los pasos para instalar docker en
 
 [Docker Desktop](https://docs.docker.com/desktop/linux/install/debian/)
 
-#### :pencil: Pasos
+#### :pencil: Pasos - Parrot OS:cd:
 
 ~~~
 sudo apt remove docker-desktop
@@ -64,6 +64,12 @@ docker --version
 docker version
 // salida -> Client: XX... / Cloud Integration...
 ~~~
+#### :pencil: Pasos - Ubuntu:cd:
+
+
+
+
+
 
 ### :rocket: Puesta en marcha y Funcionamiento
 *Iniciar Docker Desktop*
